@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ti Amo Picerija - Meni</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-fixed bg-cover bg-center" style="background-image: url('background.jpg');">
+  <!-- Header -->
+  <header class="bg-red-600 text-white p-4 flex items-center flex-wrap">
+    <img src="logo.png" alt="Ti Amo Logo" class="header-logo h-16 mr-4">
+    <h1 class="header-title text-4xl font-bold">MENI</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-4">
+    <!-- Doručak (do 13h) -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Doručak (do 13h) – Uz doručak espresso 1 RSD</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Srpski doručak', '3 jaja, kobasica ili slanina, feta, paradajz, domaći lepini', 'Sadrži gluten, mlečne proizvode, jaja')">
+          <span>Srpski doručak<span class="info-icon">i</span></span><span class="text-sm">599 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Italijanski omlet Ti Amo', '3 jaja, mocarela, pesto, rukola, domaći lepini', 'Sadrži gluten, mlečne proizvode, jaja, orašaste plodove (pesto)')">
+          <span>Italijanski omlet Ti Amo<span class="info-icon">i</span></span><span class="text-sm">599 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Tortilja omlet', '3 jaja, domaća tortilja, pesto, rukola, pomfrit', 'Sadrži gluten, jaja, orašaste plodove (pesto)')">
+          <span>Tortilja omlet<span class="info-icon">i</span></span><span class="text-sm">549 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Omlet po izboru', '3 jaja, dodatak po izboru: slanina/slanina/kapricola/mix povrća, feta, paradajz, krastavac', 'Sadrži gluten, mlečne proizvode, jaja')">
+          <span>Omlet po izboru<span class="info-icon">i</span></span><span class="text-sm">549 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Punjene prženice', '3 jaja, feta, paradajz, krastavac', 'Sadrži gluten, mlečne proizvode, jaja')">
+          <span>Punjene prženice<span class="info-icon">i</span></span><span class="text-sm">499 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Slani uštipci', 'slani uštipci, ajvar, feta', 'Sadrži gluten, mlečne proizvode')">
+          <span>Slani uštipci<span class="info-icon">i</span></span><span class="text-sm">499 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Slatki uštipci', 'slatki uštipci, eurokrem ili nutela', 'Sadrži gluten, mlečne proizvode, orašaste plodove (nutela)')">
+          <span>Slatki uštipci<span class="info-icon">i</span></span><span class="text-sm">499 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Komplet lepina', 'domaća lepina, jaja, domaći kajmak, ajvar, pršut, jaja', 'Sadrži gluten, mlečne proizvode, jaja')">
+          <span>Komplet lepina<span class="info-icon">i</span></span><span class="text-sm">599 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Sendvič lepina', 'domaća lepina, šunka, kačkavalj, pomfrit', 'Sadrži gluten, mlečne proizvode')">
+          <span>Sendvič lepina<span class="info-icon">i</span></span><span class="text-sm">549 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Sendvič kulen', 'domaća lepina, kulen, kačkavalj, pomfrit', 'Sadrži gluten, mlečne proizvode')">
+          <span>Sendvič kulen<span class="info-icon">i</span></span><span class="text-sm">599 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Sendvič pečenica', 'domaća lepina, pečenica, kačkavalj, pomfrit', 'Sadrži gluten, mlečne proizvode')">
+          <span>Sendvič pečenica<span class="info-icon">i</span></span><span class="text-sm">599 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Sendvič piletina', 'domaća lepina, seckano pileće meso, kačkavalj, pomfrit', 'Sadrži gluten, mlečne proizvode')">
+          <span>Sendvič piletina<span class="info-icon">i</span></span><span class="text-sm">649 RSD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pasta -->
+<div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Pasta – penne, špageti, fusilli</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+      <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Quattro formaggi', 'gorgonzola, mocarela, gauda, parmezan', 'Sadrži gluten, mlečne proizvode')">
+        <span>Quattro formaggi <span class="info-icon">i</span></span>
+        <span class="text-sm">790 RSD</span>
+      </div>
+      <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Bolognese', 'meso, pelat, paradajz, čili, luk, parmezan', 'Sadrži gluten, mlečne proizvode')">
+        <span>Bolognese <span class="info-icon">i</span></span>
+        <span class="text-sm">850 RSD</span>
+      </div>
+      <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Carbonara', 'panceta, jaje, parmezan', 'Sadrži gluten, mlečne proizvode, jaja')">
+        <span>Carbonara <span class="info-icon">i</span></span>
+        <span class="text-sm">790 RSD</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Obrok salate -->
+  <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Obrok salate</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+      <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Cezar salata', 'mix zelenih salata, pileće belo meso, cezar dressing, krutoni, panceta, parmezan', 'Sadrži gluten, mlečne proizvode')">
+        <span>Cezar salata <span class="info-icon">i</span></span>
+        <span class="text-sm">790 RSD</span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Predjela -->
+  <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Predjela</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+      <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+        <span>Mala daska</span>
+        <span class="text-sm">990 RSD</span>
+      </div>
+      <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+        <span>Velika daska</span>
+        <span class="text-sm">1990 RSD</span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Posna jela -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Posna jela</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Tuna tortilja', 'tortilja, mix zelenih salata, mix povrća, komadić tunjevine, dressing, pomfrit ili veđžis, sos', 'Sadrži gluten, ribu')">
+          <span>Tuna tortilja<span class="info-icon">i</span></span><span class="text-sm">750 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Tuna salata', 'mix zelenih salata, komadić tunjevine, dressing', 'Sadrži ribu')">
+          <span>Tuna salata<span class="info-icon">i</span></span><span class="text-sm">790 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Tuna pasta (penne)', 'penne, sos, mix povrća, komadić tunjevine', 'Sadrži gluten, ribu')">
+          <span>Tuna pasta (penne)<span class="info-icon">i</span></span><span class="text-sm">790 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Primaver pasta (penne)', 'penne, sos, mix povrća', 'Sadrži gluten')">
+          <span>Primaver pasta (penne)<span class="info-icon">i</span></span><span class="text-sm">690 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Kolutici lignji', 'kolutici lignji, pomfrit ili veđžis, sos', 'Sadrži gluten, mekušce')">
+          <span>Kolutici lignji<span class="info-icon">i</span></span><span class="text-sm">790 RSD</span>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Vegetarijanca', 'povrće, mix povrća, posni kačkavalj, slatka pasta marčmala krem pizza ili veđžis', 'Sadrži gluten')">
+          <div class="flex justify-between flex-wrap">
+            <span>Vegetarijanca<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 990 RSD</span>
+              <span>Velika: 1390 RSD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pizza -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Pizza – Mala 24cm, Velika 32cm</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Margaritta', 'pelat, mocarela, masline, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Margaritta<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 790 RSD</span>
+              <span>Velika: 1090 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Vesuvio', 'pelat, kačkavalj, šunka, masline, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Vesuvio<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 890 RSD</span>
+              <span>Velika: 1190 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Capricciosa', 'pelat, kačkavalj, šunka, pečurke, masline, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Capricciosa<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 890 RSD</span>
+              <span>Velika: 1190 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Chicken', 'pelat, kačkavalj, pileće meso, masline, crvenluk, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Chicken<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 990 RSD</span>
+              <span>Velika: 1390 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Pepperoni', 'pelat, kačkavalj, paprike, masline, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Pepperoni<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 990 RSD</span>
+              <span>Velika: 1390 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Quattro formaggi', 'pelat, mocarela, gorgonzola, gauda, parmezan', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Quattro formaggi<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 990 RSD</span>
+              <span>Velika: 1390 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Mashroom ology', 'pelat, kačkavalj, pečurke, feta, masline, crvenluk, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Mashroom ology<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 890 RSD</span>
+              <span>Velika: 1190 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Proscciutto', 'pelat, kačkavalj, šunka, pršut, masline, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Proscciutto<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 1090 RSD</span>
+              <span>Velika: 1590 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Quattro stagioni', 'pelat, kačkavalj, šunka, pečurke, mocarela, parmezan, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Quattro stagioni<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 1090 RSD</span>
+              <span>Velika: 1590 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Ti Amo special', 'pelat, kačkavalj, kulen, šunka, pečurke, mocarela, parmezan, origano', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Ti Amo special<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 1090 RSD</span>
+              <span>Velika: 1590 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Mortadela', 'pelat, mortadela, mocarela, pesto sos, dimljena ćuretina', 'Sadrži gluten, mlečne proizvode, orašaste plodove (pesto)')">
+          <div class="flex justify-between flex-wrap">
+            <span>Mortadela<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>Mala: 1090 RSD</span>
+              <span>Velika: 1590 RSD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Glavna jela -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Glavna jela</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <h3 class="text-xl font-semibold text-yellow-600 mb-2">Piletina</h3>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Pohovano pileće belo', '300g pilećeg mesa, pomfrit, 3 sosa', 'Sadrži gluten')">
+          <span>Pohovano pileće belo<span class="info-icon">i</span></span><span class="text-sm">790 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Batak', '300g pilećeg bataka, kačkavalj, šunka, pomfrit', 'Sadrži gluten, mlečne proizvode')">
+          <span>Batak<span class="info-icon">i</span></span><span class="text-sm">790 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Punjeni batak', '500g pilećeg bataka, kačkavalj, šunka, pomfrit, 3 sosa', 'Sadrži gluten, mlečne proizvode')">
+          <span>Punjeni batak<span class="info-icon">i</span></span><span class="text-sm">1190 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Pileća krilca', '500g pilećih krilaca, pomfrit, 3 sosa', 'Sadrži gluten')">
+          <span>Pileća krilca<span class="info-icon">i</span></span><span class="text-sm">690 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Tortilja sa piletinom', 'tortilja, kačkavalj, seckana piletina, paradajz, rukola, majonez, pomfrit', 'Sadrži gluten, mlečne proizvode')">
+          <span>Tortilja sa piletinom<span class="info-icon">i</span></span><span class="text-sm">690 RSD</span>
+        </div>
+
+        <h3 class="text-xl font-semibold text-yellow-600 mt-4 mb-2">Juneće</h3>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Juneća ćevapi 7', '140g junećeg ćevapa, pomfrit, luk, lepina', 'Sadrži gluten')">
+          <span>Juneća ćevapi 7<span class="info-icon">i</span></span><span class="text-sm">650 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Juneća ćevapi 15', '300g junećeg ćevapa, pomfrit, luk, lepina', 'Sadrži gluten')">
+          <span>Juneća ćevapi 15<span class="info-icon">i</span></span><span class="text-sm">1190 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Juneća pljeskavica', '300g junećeg mesa, kačkavalj, pečenica, pomfrit ili veđžis, lepina', 'Sadrži gluten, mlečne proizvode')">
+          <span>Juneća pljeskavica<span class="info-icon">i</span></span><span class="text-sm">990 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Punjena pljeskavica', '300g junećeg mesa, kačkavalj, pečenica, pomfrit ili veđžis, lepina', 'Sadrži gluten, mlečne proizvode')">
+          <span>Punjena pljeskavica<span class="info-icon">i</span></span><span class="text-sm">1290 RSD</span>
+        </div>
+
+        <h3 class="text-xl font-semibold text-yellow-600 mt-4 mb-2">Svinjetina</h3>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Karadjordjeva', 'svinjski file, kajmak, pomfrit, majonez, tartar sos', 'Sadrži gluten, mlečne proizvode')">
+          <span>Karadjordjeva<span class="info-icon">i</span></span><span class="text-sm">1190 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Plava traka', 'svinjski file, kačkavalj, pečenica, pomfrit ili veđžis, lepina', 'Sadrži gluten, mlečne proizvode')">
+          <span>Plava traka<span class="info-icon">i</span></span><span class="text-sm">1190 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Kobasica', 'klasična ili sa kačkavaljem', 'Sadrži gluten, mlečne proizvode (ako je sa kačkavaljem)')">
+          <span>Kobasica<span class="info-icon">i</span></span><span class="text-sm">690 RSD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mix mesa za dvoje osobe -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Mix mesa za dvoje osobe</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Mix mesa za dvoje osobe', 'ćevapi, pljeskavica, pileći batak, kobasice, pomfrit ili veđžis', 'Sadrži gluten')">
+          <span>Mix mesa za dvoje osobe<span class="info-icon">i</span></span><span class="text-sm">2190 RSD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Burger -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Burger</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Ti Amo burger', '120g junećeg mesa, slanina, paradajz, čedar, majonez, kečap, burger sos, kisele krastavice, pomfrit, luk', 'Sadrži gluten, mlečne proizvode')">
+          <span>Ti Amo burger<span class="info-icon">i</span></span><span class="text-sm">590 RSD</span>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Double burger', '240g junećeg mesa, slanina, paradajz, čedar, majonez, kečap, burger sos, kisele krastavice, pomfrit, luk', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Double burger<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>240g: 790 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Ti Amo burger', '300g junećeg mesa, slanina, paradajz, čedar, majonez, kečap, burger sos, kisele krastavice, pomfrit, luk', 'Sadrži gluten, mlečne proizvode')">
+          <div class="flex justify-between flex-wrap">
+            <span>Ti Amo burger<span class="info-icon">i</span></span>
+            <div class="prices flex space-x-4 text-sm">
+              <span>300g: 790 RSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Prevlaka od topljenog čedar sira</span><span class="text-sm">100 RSD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slatki dodatci -->
+    <div class="mb-6">
+        <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Slatki dodatci</h2>
+        <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Eurokrem', 'eurokrem, plazma', 'Sadrži gluten, mlečne proizvode')">
+          <span>Eurokrem<span class="info-icon">i</span></span><span class="text-sm">390 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Nutela', 'nutela, plazma', 'Sadrži gluten, mlečne proizvode, orašaste plodove')">
+          <span>Nutela<span class="info-icon">i</span></span><span class="text-sm">490 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Pistachio', 'pistachio, plazma', 'Sadrži gluten, mlečne proizvode, orašaste plodove')">
+          <span>Pistachio<span class="info-icon">i</span></span><span class="text-sm">650 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Kinder bueno', 'kinder bueno, plazma', 'Sadrži gluten, mlečne proizvode, orašaste plodove')">
+          <span>Kinder bueno<span class="info-icon">i</span></span><span class="text-sm">590 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Rafaelo', 'rafaelo, plazma', 'Sadrži gluten, mlečne proizvode, orašaste plodove')">
+          <span>Rafaelo<span class="info-icon">i</span></span><span class="text-sm">590 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Nutela</span><span class="text-sm">250 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Eurokrem</span><span class="text-sm">190 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Plazma u mleku</span><span class="text-sm">90 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Banana</span><span class="text-sm">90 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Malina</span><span class="text-sm">90 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Višnja</span><span class="text-sm">90 RSD</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slani dodatci -->
+    <div class="mb-6">
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Slani dodatci</h2>
+    <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Lepinja</span><span class="text-sm">150 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Garlic hleb</span><span class="text-sm">250 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Pomfrit</span><span class="text-sm">250 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Kajmak</span><span class="text-sm">110 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Pršut</span><span class="text-sm">250 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Pečenica</span><span class="text-sm">150 RSD</span>
+        </div>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base">
+          <span>Šunka</span><span class="text-sm">120 RSD</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Popup -->
+  <div id="overlay" class="overlay"></div>
+  <div id="popup" class="popup">
+    <h3 id="popup-title" class="text-xl font-bold mb-2"></h3>
+    <p id="popup-ingredients" class="mb-2"></p>
+    <p id="popup-allergens" class="mb-4 italic"></p>
+    <button onclick="closePopup()" class="bg-red-600 text-white px-4 py-2 rounded text-base">Zatvori</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4 text-center">
+    <p>Ti Amo caffe & pizzeria, Kačarevo, Srbija</p>
+    <p>Telefon: 065 27 63 500</p>
+    <p>Instagram: <a href="https://www.instagram.com/ti_amo_picerija.rs" class="underline">@ti_amo_picerija.rs</a></p>
+    <p>Since 2023</p>
+    <p><a href="https://www.facebook.com/p/TI-AMO-PICERIJArs-100090231156927/" class="underline">Posetite nas na Facebook-u</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
