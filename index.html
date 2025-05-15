@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ti Amo Picerija - Meni</title>
+  <link rel="icon" type="image/png" href="logo.png"> <!-- Added favicon link -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBTBNFZN7E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SBTBNFZN7E');
+</script>
 </head>
 <body class="bg-fixed bg-cover bg-center" style="background-image: url('background.jpg');">
   <!-- Header -->
@@ -414,6 +424,29 @@
     <p>Since 2023</p>
     <p><a href="https://www.facebook.com/p/TI-AMO-PICERIJArs-100090231156927/" class="underline">Posetite nas na Facebook-u</a></p>
   </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <p>Ovaj sajt koristi kolačiće za poboljšanje korisničkog iskustva i analitiku. Prihvatate li kolačiće?</p>
+    <div class="cookie-buttons">
+      <button id="accept-cookies" class="bg-green-600 text-white px-4 py-2 rounded text-base mr-2">Prihvati</button>
+      <button id="reject-cookies" class="bg-red-600 text-white px-4 py-2 rounded text-base">Odbij</button>
+    </div>
+  </div>
+
+  <!-- Google tag (gtag.js) - Moved here to be controlled by JS -->
+  <!-- Initially commented out or src removed -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBTBNFZN7E"></script> -->
+  <script id="google-analytics-script">
+    // This script will be populated and loaded by script.js if consent is given
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // gtag('config', 'G-SBTBNFZN7E'); // This will be called by script.js if consent is given
+  </script>
 
   <script src="script.js" defer></script>
 </body>
