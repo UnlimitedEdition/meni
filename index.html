@@ -14,14 +14,22 @@
   <meta property="og:locale" content="sr_RS">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-fixed bg-cover bg-center" style="background-image: url('background.jpg');">
+<body>
   <!-- Header -->
-  <header class="bg-red-600 text-white p-4 flex items-center flex-wrap">
-    <img src="logo.png" alt="Ti Amo Logo" class="header-logo h-16 mr-4">
-    <h1 class="header-title text-4xl font-bold">MENI</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="logo.png" alt="Ti Amo Logo" class="header-logo">
+      <div class="header-text">
+        <h1 class="header-title">MENI</h1>
+        <span class="header-tagline">Ti Amo · Caffe &amp; Pizzeria</span>
+      </div>
+    </div>
   </header>
 
   <!-- Main Content -->
@@ -417,12 +425,19 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white p-4 text-center">
-    <p>Ti Amo caffe & pizzeria, Kačarevo, Srbija</p>
-    <p>Telefon: 065 27 63 500</p>
-    <p>Instagram: <a href="https://www.instagram.com/ti_amo_picerija.rs" class="underline">@ti_amo_picerija.rs</a></p>
-    <p>Since 2023</p>
-    <p><a href="https://www.facebook.com/p/TI-AMO-PICERIJArs-100090231156927/" class="underline">Posetite nas na Facebook-u</a></p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">Ti Amo</span>
+        <span class="footer-sub">Caffe &amp; Pizzeria · Kačarevo, Srbija</span>
+      </div>
+      <div class="footer-contact">
+        <a href="tel:+381652763500" class="footer-link"><span aria-hidden="true">☎</span> 065 27 63 500</a>
+        <a href="https://www.instagram.com/ti_amo_picerija.rs" class="footer-link" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">◎</span> @ti_amo_picerija.rs</a>
+        <a href="https://www.facebook.com/p/TI-AMO-PICERIJArs-100090231156927/" class="footer-link" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">f</span> Facebook</a>
+      </div>
+      <div class="footer-since">Since 2023</div>
+    </div>
   </footer>
 
   <!-- Cookie Consent Banner -->
