@@ -1281,11 +1281,6 @@ body::-webkit-scrollbar-thumb:hover { background: linear-gradient(135deg, var(--
 [data-theme="trattoria"] .hero::before {
   background:
     radial-gradient(ellipse 85% 60% at center, rgba(0, 0, 0, 0.5) 0%, transparent 75%),
-    repeating-linear-gradient(135deg,
-      transparent 0, transparent 72px,
-      rgba(217, 74, 62, 0.22) 72px, rgba(217, 74, 62, 0.22) 76px,
-      transparent 76px, transparent 150px,
-      rgba(255, 248, 230, 0.18) 150px, rgba(255, 248, 230, 0.18) 154px),
     linear-gradient(180deg, rgba(25, 20, 16, 0.85) 0%, rgba(25, 20, 16, 0.72) 50%, rgba(25, 20, 16, 0.9) 100%);
 }
 [data-theme="trattoria"] .hero::after {
