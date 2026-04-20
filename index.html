@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ti Amo Picerija - Meni</title>
-  <link rel="icon" type="image/png" href="logo.png"> <!-- Added favicon link -->
+  <meta name="description" content="Meni picerije Ti Amo u Kačarevu - pizza, pasta, burgeri, doručak, glavna jela, salate i slatki dodatci. Kvalitetna italijanska i domaća kuhinja.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#dc2626">
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:title" content="Ti Amo Picerija - Meni">
+  <meta property="og:description" content="Meni picerije Ti Amo u Kačarevu - pizza, pasta, burgeri, doručak i glavna jela.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:locale" content="sr_RS">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBTBNFZN7E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SBTBNFZN7E');
-</script>
 </head>
 <body class="bg-fixed bg-cover bg-center" style="background-image: url('background.jpg');">
   <!-- Header -->
@@ -149,9 +149,9 @@
     <div class="mb-6">
     <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Pizza – Mala 24cm, Velika 32cm</h2>
     <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
-        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Margaritta', 'pelat, mocarela, masline, origano', 'Sadrži gluten, mlečne proizvode')">
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Margherita', 'pelat, mocarela, masline, origano', 'Sadrži gluten, mlečne proizvode')">
           <div class="flex justify-between flex-wrap">
-            <span>Margaritta<span class="info-icon">i</span></span>
+            <span>Margherita<span class="info-icon">i</span></span>
             <div class="prices flex space-x-4 text-sm">
               <span>Mala: 790 RSD</span>
               <span>Velika: 1090 RSD</span>
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Chicken', 'pelat, kačkavalj, pileće meso, masline, crvenluk, origano', 'Sadrži gluten, mlečne proizvode')">
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Chicken', 'pelat, kačkavalj, pileće meso, masline, crveni luk, origano', 'Sadrži gluten, mlečne proizvode')">
           <div class="flex justify-between flex-wrap">
             <span>Chicken<span class="info-icon">i</span></span>
             <div class="prices flex space-x-4 text-sm">
@@ -203,18 +203,18 @@
             </div>
           </div>
         </div>
-        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Mashroom ology', 'pelat, kačkavalj, pečurke, feta, masline, crvenluk, origano', 'Sadrži gluten, mlečne proizvode')">
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Mushroom-ology', 'pelat, kačkavalj, pečurke, feta, masline, crveni luk, origano', 'Sadrži gluten, mlečne proizvode')">
           <div class="flex justify-between flex-wrap">
-            <span>Mashroom ology<span class="info-icon">i</span></span>
+            <span>Mushroom-ology<span class="info-icon">i</span></span>
             <div class="prices flex space-x-4 text-sm">
               <span>Mala: 890 RSD</span>
               <span>Velika: 1190 RSD</span>
             </div>
           </div>
         </div>
-        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Proscciutto', 'pelat, kačkavalj, šunka, pršut, masline, origano', 'Sadrži gluten, mlečne proizvode')">
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Prosciutto', 'pelat, kačkavalj, šunka, pršut, masline, origano', 'Sadrži gluten, mlečne proizvode')">
           <div class="flex justify-between flex-wrap">
-            <span>Proscciutto<span class="info-icon">i</span></span>
+            <span>Prosciutto<span class="info-icon">i</span></span>
             <div class="prices flex space-x-4 text-sm">
               <span>Mala: 1090 RSD</span>
               <span>Velika: 1590 RSD</span>
@@ -299,12 +299,12 @@
       </div>
     </div>
 
-    <!-- Mix mesa za dvoje osobe -->
+    <!-- Mix mesa za dve osobe -->
     <div class="mb-6">
-    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Mix mesa za dvoje osobe</h2>
+    <h2 class="text-2xl font-semibold bg-yellow-500 bg-opacity-80 text-white p-3 border border-white border-opacity-10">Mix mesa za dve osobe</h2>
     <div class="p-4 bg-white bg-opacity-80 border border-white border-opacity-10">
-        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Mix mesa za dvoje osobe', 'ćevapi, pljeskavica, pileći batak, kobasice, pomfrit ili veđžis', 'Sadrži gluten')">
-          <span>Mix mesa za dvoje osobe<span class="info-icon">i</span></span><span class="text-sm">2190 RSD</span>
+        <div class="flex justify-between py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Mix mesa za dve osobe', 'ćevapi, pljeskavica, pileći batak, kobasice, pomfrit ili veđžis', 'Sadrži gluten')">
+          <span>Mix mesa za dve osobe<span class="info-icon">i</span></span><span class="text-sm">2190 RSD</span>
         </div>
       </div>
     </div>
@@ -324,9 +324,9 @@
             </div>
           </div>
         </div>
-        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Ti Amo burger', '300g junećeg mesa, slanina, paradajz, čedar, majonez, kečap, burger sos, kisele krastavice, pomfrit, luk', 'Sadrži gluten, mlečne proizvode')">
+        <div class="py-1 cursor-pointer hover:text-red-600 text-base" onclick="showPopup('Triple Ti Amo burger', '300g junećeg mesa, slanina, paradajz, čedar, majonez, kečap, burger sos, kisele krastavice, pomfrit, luk', 'Sadrži gluten, mlečne proizvode')">
           <div class="flex justify-between flex-wrap">
-            <span>Ti Amo burger<span class="info-icon">i</span></span>
+            <span>Triple Ti Amo burger<span class="info-icon">i</span></span>
             <div class="prices flex space-x-4 text-sm">
               <span>300g: 790 RSD</span>
             </div>
@@ -408,12 +408,12 @@
   </main>
 
   <!-- Popup -->
-  <div id="overlay" class="overlay"></div>
-  <div id="popup" class="popup">
+  <div id="overlay" class="overlay" onclick="closePopup()"></div>
+  <div id="popup" class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-ingredients" tabindex="-1">
     <h3 id="popup-title" class="text-xl font-bold mb-2"></h3>
     <p id="popup-ingredients" class="mb-2"></p>
     <p id="popup-allergens" class="mb-4 italic"></p>
-    <button onclick="closePopup()" class="bg-red-600 text-white px-4 py-2 rounded text-base">Zatvori</button>
+    <button onclick="closePopup()" class="bg-red-600 text-white px-4 py-2 rounded text-base" aria-label="Zatvori prozor">Zatvori</button>
   </div>
 
   <!-- Footer -->
@@ -433,20 +433,6 @@
       <button id="reject-cookies" class="bg-red-600 text-white px-4 py-2 rounded text-base">Odbij</button>
     </div>
   </div>
-
-  <!-- Google tag (gtag.js) - Moved here to be controlled by JS -->
-  <!-- Initially commented out or src removed -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBTBNFZN7E"></script> -->
-  <script id="google-analytics-script">
-    // This script will be populated and loaded by script.js if consent is given
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    // gtag('config', 'G-SBTBNFZN7E'); // This will be called by script.js if consent is given
-  </script>
 
   <script src="script.js" defer></script>
 </body>
