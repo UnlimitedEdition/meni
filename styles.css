@@ -781,10 +781,12 @@ body::-webkit-scrollbar-thumb:hover { background: linear-gradient(135deg, var(--
   padding: 5rem 1.5rem 5rem;
 }
 [data-theme="moderno"] .hero-bg {
-  filter: brightness(0.65) contrast(1.05) saturate(0.7);
+  filter: brightness(0.55) contrast(1.05) saturate(0.65);
 }
 [data-theme="moderno"] .hero::before {
-  background: linear-gradient(135deg, rgba(40, 35, 28, 0.65) 0%, rgba(185, 138, 71, 0.45) 60%, rgba(40, 35, 28, 0.75) 100%);
+  background:
+    radial-gradient(ellipse 80% 60% at center, rgba(20, 16, 12, 0.55) 0%, transparent 70%),
+    linear-gradient(135deg, rgba(30, 25, 20, 0.78) 0%, rgba(140, 100, 55, 0.55) 60%, rgba(30, 25, 20, 0.88) 100%);
 }
 [data-theme="moderno"] .hero::after {
   background: radial-gradient(ellipse at center top, transparent 55%, #f7f3ec 72%);
@@ -792,7 +794,7 @@ body::-webkit-scrollbar-thumb:hover { background: linear-gradient(135deg, var(--
 [data-theme="moderno"] .hero-title {
   color: #fffdf8;
   -webkit-text-fill-color: #fffdf8;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.65), 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 [data-theme="moderno"] .hero-sub {
   color: #f0e8d8;
@@ -1273,24 +1275,25 @@ body::-webkit-scrollbar-thumb:hover { background: linear-gradient(135deg, var(--
   overflow: hidden;
 }
 [data-theme="trattoria"] .hero-bg {
-  filter: brightness(0.7) saturate(0.95);
+  filter: brightness(0.55) saturate(0.9);
 }
 [data-theme="trattoria"] .hero::before {
   background:
+    radial-gradient(ellipse 80% 60% at center, rgba(20, 16, 12, 0.5) 0%, transparent 70%),
     repeating-linear-gradient(135deg,
       transparent 0, transparent 58px,
-      rgba(74, 106, 47, 0.25) 58px, rgba(74, 106, 47, 0.25) 62px,
+      rgba(74, 106, 47, 0.3) 58px, rgba(74, 106, 47, 0.3) 62px,
       transparent 62px, transparent 120px,
-      rgba(217, 74, 62, 0.25) 120px, rgba(217, 74, 62, 0.25) 124px),
-    linear-gradient(135deg, rgba(40, 35, 28, 0.55) 0%, rgba(74, 106, 47, 0.45) 60%, rgba(217, 74, 62, 0.5) 100%);
+      rgba(217, 74, 62, 0.3) 120px, rgba(217, 74, 62, 0.3) 124px),
+    linear-gradient(135deg, rgba(30, 25, 20, 0.78) 0%, rgba(74, 106, 47, 0.62) 60%, rgba(217, 74, 62, 0.7) 100%);
 }
 [data-theme="trattoria"] .hero::after {
   background: radial-gradient(ellipse at center top, transparent 55%, #fff8e6 72%);
 }
 [data-theme="trattoria"] .hero-title {
-  color: #ffe1a8;
-  -webkit-text-fill-color: #ffe1a8;
-  text-shadow: 4px 4px 0 #4a6a2f, 0 4px 22px rgba(0, 0, 0, 0.35);
+  color: #fff5d0;
+  -webkit-text-fill-color: #fff5d0;
+  text-shadow: 4px 4px 0 #2d3a19, 0 5px 26px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 [data-theme="trattoria"] .hero-sub { color: #fff8e6; }
 [data-theme="trattoria"] .hero-location { color: #fff8e6; opacity: 0.85; }
