@@ -39,7 +39,7 @@ function loadGoogleAnalytics() {
 }
 
 function initScrollReveal() {
-    const sections = document.querySelectorAll('main > .mb-6');
+    const sections = document.querySelectorAll('.menu > section');
     if (!('IntersectionObserver' in window)) {
         sections.forEach(s => s.classList.add('revealed'));
         return;
@@ -51,12 +51,36 @@ function initScrollReveal() {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     sections.forEach(s => observer.observe(s));
+}
+
+function initCatnavActive() {
+    const links = document.querySelectorAll('.catnav a');
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    const map = new Map();
+    links.forEach(a => {
+        const id = a.getAttribute('href').slice(1);
+        const target = document.getElementById(id);
+        if (target) map.set(target, a);
+    });
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const link = map.get(entry.target);
+            if (!link) return;
+            if (entry.isIntersecting) {
+                links.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    map.forEach((_, section) => observer.observe(section));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
+    initCatnavActive();
 
     const cookieBanner = document.getElementById('cookie-banner');
     const acceptButton = document.getElementById('accept-cookies');
