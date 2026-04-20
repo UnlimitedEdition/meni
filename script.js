@@ -57,25 +57,53 @@ function initScrollReveal() {
 
 function initCatnavActive() {
     const links = document.querySelectorAll('.catnav a');
-    if (!links.length || !('IntersectionObserver' in window)) return;
+    if (!links.length) return;
+    const nav = document.querySelector('.catnav-inner');
     const map = new Map();
     links.forEach(a => {
         const id = a.getAttribute('href').slice(1);
         const target = document.getElementById(id);
         if (target) map.set(target, a);
     });
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            const link = map.get(entry.target);
-            if (!link) return;
-            if (entry.isIntersecting) {
-                links.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-                link.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-            }
-        });
-    }, { rootMargin: '-40% 0px -55% 0px' });
-    map.forEach((_, section) => observer.observe(section));
+    const sections = [...map.keys()];
+    if (!sections.length) return;
+
+    let currentActive = null;
+    let ticking = false;
+
+    function centerChipInNav(link) {
+        if (!nav) return;
+        const chipRect = link.getBoundingClientRect();
+        const navRect = nav.getBoundingClientRect();
+        const offset = (chipRect.left - navRect.left) - (navRect.width - chipRect.width) / 2;
+        const target = nav.scrollLeft + offset;
+        if (Math.abs(target - nav.scrollLeft) < 4) return;
+        nav.scrollTo({ left: target, behavior: 'smooth' });
+    }
+
+    function update() {
+        ticking = false;
+        const anchorY = (window.innerHeight * 0.25) + 60;
+        let active = sections[0];
+        for (const section of sections) {
+            if (section.getBoundingClientRect().top - anchorY <= 0) active = section;
+        }
+        if (active === currentActive) return;
+        currentActive = active;
+        const link = map.get(active);
+        links.forEach(l => l.classList.toggle('active', l === link));
+        centerChipInNav(link);
+    }
+
+    function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(update);
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    update();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
