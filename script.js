@@ -38,6 +38,24 @@ function loadGoogleAnalytics() {
     gtag('config', GA_MEASUREMENT_ID);
 }
 
+function initThemeSwitcher() {
+    const buttons = document.querySelectorAll('.theme-btn');
+    if (!buttons.length) return;
+    const root = document.documentElement;
+    const saved = localStorage.getItem('meni_theme');
+    if (saved) root.setAttribute('data-theme', saved);
+    const current = root.getAttribute('data-theme') || 'classic';
+    buttons.forEach(btn => {
+        btn.classList.toggle('is-active', btn.dataset.theme === current);
+        btn.addEventListener('click', () => {
+            const theme = btn.dataset.theme;
+            root.setAttribute('data-theme', theme);
+            localStorage.setItem('meni_theme', theme);
+            buttons.forEach(b => b.classList.toggle('is-active', b === btn));
+        });
+    });
+}
+
 function initScrollReveal() {
     const sections = document.querySelectorAll('.menu > section');
     if (!('IntersectionObserver' in window)) {
@@ -107,6 +125,7 @@ function initCatnavActive() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    initThemeSwitcher();
     initScrollReveal();
     initCatnavActive();
 
